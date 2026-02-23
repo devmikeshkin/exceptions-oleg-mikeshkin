@@ -26,7 +26,7 @@ public class Homework {
         System.out.println();
 
         System.out.println("Задание 3");
-        Person person = new Person("Денис", true);
+        Person person = new Person("Денис", false);
         try {
             person.checkReadyRun();
         } catch (NotReadyRunException e) {
@@ -35,7 +35,7 @@ public class Homework {
         System.out.println();
 
         System.out.println("Задание 4");
-        Car car = new Car("Mazda", true);
+        Car car = new Car("Mazda", false);
         try {
             car.checkReadyToGo();
         } catch (NotReadyToGoException e) {
