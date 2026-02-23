@@ -7,12 +7,28 @@ public class Person {
         this.name = name;
         this.readyRun = readyRun;
     }
+
+    public String getName() {
+        return name;
+    }
+    public boolean getReadyRun () {
+        return readyRun;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setReadyRun(boolean readyRun) {
+        this.readyRun = readyRun;
+    }
+
     public void checkReadyRun () throws NotReadyRunException {
-        if (!readyRun) {
+        if (!getReadyRun()) {
             throw new NotReadyRunException();
         }
         else {
-            System.out.println(name + " готов бежать");
+            System.out.println(getName() + " готов бежать");
         }
     }
 }
